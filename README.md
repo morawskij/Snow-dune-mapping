@@ -1,5 +1,9 @@
-# Raster-skeletonization
-Standalone Python tool for thin grayscale raster skeletonization, created because the QGIS plugin is bugged. Algorithm implemented as described in Biagioni & Eriksson 2012 paper *Map Inference in the Face of Noise and Disparity*
+# Programmatic tools for automated mapping of snow dunes based on a DEM
+
+## Additionnaly:
+
+## Raster-skeletonization
+Python tools for thin grayscale raster skeletonization, created because the QGIS plugin is bugged. Algorithm implemented as described in Biagioni & Eriksson 2012 paper *Map Inference in the Face of Noise and Disparity*
 
 ## Important remarks:
 - The *nodata_value* stored in the **raster_data** class object should be a number lower than the minimum value encountered within that raster (also after any arithmetic operations you might wanna apply, e. g. if the minimum of the raster is 0 and maximum of the raster is 100 but you intend to multiply it by -1 at some point, be sure to set *nodata_value* to a number below -100)
